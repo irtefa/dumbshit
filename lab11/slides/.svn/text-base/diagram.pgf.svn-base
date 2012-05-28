@@ -1,0 +1,27 @@
+\begin{tikzpicture}
+
+\draw(0,0) node [rectangle,draw,label={below:sum},inner sep=.25cm] (sum) {$3$};
+
+\draw (4,0) node [rectangle,draw,label={above:T1},inner sep=2cm] (T1){};
+\draw (4,1) node [rectangle,draw,label={left:temp1},inner sep=.25cm] (t1r1) {$0$};
+\draw (4,0) node [rectangle,draw,label={left:temp2},inner sep=.25cm] (t1r2) {$2$};
+\draw (4,-1) node [rectangle,draw,label={left:temp3},inner sep=.25cm] (t1r3) {$2$};
+
+\draw (9,0) node [rectangle,draw,label={above:T2},inner sep=2cm] (T2) {};
+\draw (9,1) node [rectangle,draw,label={left:temp1},inner sep=.25cm] (t2r1) {$0$};
+\draw (9,0) node [rectangle,draw,label={left:temp2},inner sep=.25cm] (t2r2) {$3$};
+\draw (9,-1) node [rectangle,draw,label={left:temp3},inner sep=.25cm] (t2r3) {$3$};
+
+%\path[->] (t1r3) edge [bend left=30](sum);
+\path[->] (t2r3) edge [bend left=30](sum);
+
+%\path[->] (sum) edge [bend left=30] (t1r1);
+%\path[->] (sum) edge [bend left=30] (t2r1);
+
+%\path[->] (t1r1) edge [bend left=80] (t1r3);
+%\path[->] (t1r2) edge [bend left=60] (t1r3);
+
+%\path[->] (t2r1) edge [bend left=80] (t2r3);
+%\path[->] (t2r2) edge [bend left=60] (t2r3);
+
+\end{tikzpicture}

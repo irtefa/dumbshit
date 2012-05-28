@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/sp12-cs225/!svn/ver/819/_shared/util
+END
+pipestream.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/sp12-cs225/!svn/ver/819/_shared/util/pipestream.h
+END
+util.h
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/sp12-cs225/!svn/ver/819/_shared/util/util.h
+END
+random.h
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/sp12-cs225/!svn/ver/819/_shared/util/random.h
+END
+pipestream.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/sp12-cs225/!svn/ver/819/_shared/util/pipestream.cpp
+END
+util.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/sp12-cs225/!svn/ver/819/_shared/util/util.cpp
+END

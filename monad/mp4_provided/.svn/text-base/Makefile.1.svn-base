@@ -1,0 +1,2 @@
+TESTOBJS =
+include Makefile.proxy

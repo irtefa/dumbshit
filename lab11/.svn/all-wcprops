@@ -1,0 +1,119 @@
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/sp12-cs225/!svn/ver/28098/irtefa1/lab11
+END
+exact_selector.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/sp12-cs225/!svn/ver/28098/irtefa1/lab11/exact_selector.cpp
+END
+easypng.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/sp12-cs225/!svn/ver/28098/irtefa1/lab11/easypng.cpp
+END
+exact_selector.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/sp12-cs225/!svn/ver/28098/irtefa1/lab11/exact_selector.h
+END
+genfile.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/sp12-cs225/!svn/ver/28098/irtefa1/lab11/genfile.cpp
+END
+easypng.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/sp12-cs225/!svn/ver/28098/irtefa1/lab11/easypng.h
+END
+tolerance_selector.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/sp12-cs225/!svn/ver/28098/irtefa1/lab11/tolerance_selector.cpp
+END
+counter.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/sp12-cs225/!svn/ver/28098/irtefa1/lab11/counter.cpp
+END
+tolerance_selector.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/sp12-cs225/!svn/ver/28098/irtefa1/lab11/tolerance_selector.h
+END
+docs.doxygen
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/sp12-cs225/!svn/ver/28098/irtefa1/lab11/docs.doxygen
+END
+min.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/sp12-cs225/!svn/ver/28098/irtefa1/lab11/min.cpp
+END
+findmin.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/sp12-cs225/!svn/ver/29055/irtefa1/lab11/findmin.cpp
+END
+selector.h
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/sp12-cs225/!svn/ver/28098/irtefa1/lab11/selector.h
+END
+pnganalysis.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/sp12-cs225/!svn/ver/29055/irtefa1/lab11/pnganalysis.cpp
+END
+pixel_hash.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/sp12-cs225/!svn/ver/28098/irtefa1/lab11/pixel_hash.h
+END
+findmin.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/sp12-cs225/!svn/ver/28098/irtefa1/lab11/findmin.h
+END
+compare.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/sp12-cs225/!svn/ver/28098/irtefa1/lab11/compare.h
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/sp12-cs225/!svn/ver/29055/irtefa1/lab11/Makefile
+END
+histogram.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/sp12-cs225/!svn/ver/28098/irtefa1/lab11/histogram.cpp
+END
+pnganalysis.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/sp12-cs225/!svn/ver/28098/irtefa1/lab11/pnganalysis.h
+END

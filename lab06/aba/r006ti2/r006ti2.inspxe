@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+ <rdmgr>
+  <timestamp type="u64_t">1333143241</timestamp>
+  <hostname type="string">siebl-0224-35.ews.illinois.edu</hostname>
+  <os type="string">linux</os>
+  <product type="string">Intel® Inspector XE 2011 Update 5</product>
+  <buildNumber type="s32_t">180252</buildNumber>
+  <variables>
+   <at type="string">ti2</at>
+  </variables>
+ </rdmgr>
+</root>

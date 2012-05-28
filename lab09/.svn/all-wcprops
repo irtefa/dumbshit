@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/sp12-cs225/!svn/ver/19619/irtefa1/lab09
+END
+coloredout.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/sp12-cs225/!svn/ver/19619/irtefa1/lab09/coloredout.cpp
+END
+bst_given.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/sp12-cs225/!svn/ver/19619/irtefa1/lab09/bst_given.cpp
+END
+coloredout.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/sp12-cs225/!svn/ver/19619/irtefa1/lab09/coloredout.h
+END
+main.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/sp12-cs225/!svn/ver/19619/irtefa1/lab09/main.cpp
+END
+seed.h
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/sp12-cs225/!svn/ver/19619/irtefa1/lab09/seed.h
+END
+bst.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/sp12-cs225/!svn/ver/20300/irtefa1/lab09/bst.cpp
+END
+gnuplot.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/sp12-cs225/!svn/ver/19619/irtefa1/lab09/gnuplot.cpp
+END
+soln_testbst.out
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/sp12-cs225/!svn/ver/19619/irtefa1/lab09/soln_testbst.out
+END
+testBST.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/sp12-cs225/!svn/ver/19619/irtefa1/lab09/testBST.cpp
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/sp12-cs225/!svn/ver/19619/irtefa1/lab09/Makefile
+END
+seed.o
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/sp12-cs225/!svn/ver/19619/irtefa1/lab09/seed.o
+END
+bst.h
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/sp12-cs225/!svn/ver/20145/irtefa1/lab09/bst.h
+END
+gnuplot.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/sp12-cs225/!svn/ver/19619/irtefa1/lab09/gnuplot.h
+END

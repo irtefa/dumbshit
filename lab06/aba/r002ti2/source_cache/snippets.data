@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<snippets>
+  <file name="/home/irtefa1/cs225/lab06/flipper.cpp" md5="">
+    <snippet line="43">
+      <line line="40">            temp = *image(i, j);</line>
+      <line line="41">            *image(i, j) = *image(i, height - 1 - j);</line>
+      <line line="42">            *image(i, height - 1 - j) = temp;</line>
+      <line line="43">        }</line>
+      <line line="44">    }</line>
+    </snippet>
+    <snippet line="41">
+      <line line="38">        for(int j = 0; j &lt; height / 2; ++j)</line>
+      <line line="39">        {</line>
+      <line line="40">            temp = *image(i, j);</line>
+      <line line="41">            *image(i, j) = *image(i, height - 1 - j);</line>
+      <line line="42">            *image(i, height - 1 - j) = temp;</line>
+    </snippet>
+  </file>
+</snippets>

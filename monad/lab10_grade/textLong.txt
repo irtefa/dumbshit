@@ -1,0 +1,4 @@
+A PhotoMosaic is a picture created by taking some source picture, dividing it up
+into rectangular sections, and replacing each section with a small thumbnail
+image whose color closely approximates the color of the section it replaces.
+Viewing the photo at low magnification, the individual pixels appear as the source image, while a closer examination reveals that the image is made up of many smaller tile images.

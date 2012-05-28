@@ -1,0 +1,34 @@
+
+=== Start: [2012/03/30 16:02:14] === 
+Threading error analysis: started
+Result file: [/home/irtefa1/cs225/lab06/aba/r000ti2/r000ti2.inspxe] 
+Loaded module: /home/irtefa1/cs225/lab06/lab06. 
+Loaded module: /lib64/ld-linux-x86-64.so.2. 
+Loaded module: /usr/lib64/libpng12.so.0. 
+Loaded module: /lib64/libm.so.6. 
+Loaded module: /software/intel-composer-2011u5-x86_64/composerxe-2011.5.220/compiler/lib/intel64/libiomp5.so. 
+Loaded module: /usr/lib64/libstdc++.so.6. 
+Loaded module: /lib64/libgcc_s.so.1. 
+Loaded module: /lib64/libpthread.so.0. 
+Loaded module: /lib64/libc.so.6. 
+Loaded module: /lib64/libdl.so.2. 
+Loaded module: /lib64/libz.so.1. 
+Loaded module: /software/intel-inspector-2011u5-x86_64/inspector_xe_2011/bin64/../lib64/runtime/libittnotify.so. 
+Warning: One or more threads in the application accessed the stack of another thread. This may indicate one or more bugs in your application. Setting the Intel(R) Inspector XE 2011 to detect data races on stack accesses and running another analysis may help you locate these and other bugs. 
+Unloaded module: /home/irtefa1/cs225/lab06/lab06. 
+Unloaded module: /lib64/ld-linux-x86-64.so.2. 
+Unloaded module: /usr/lib64/libpng12.so.0. 
+Unloaded module: /lib64/libm.so.6. 
+Unloaded module: /software/intel-composer-2011u5-x86_64/composerxe-2011.5.220/compiler/lib/intel64/libiomp5.so. 
+Unloaded module: /usr/lib64/libstdc++.so.6. 
+Unloaded module: /lib64/libgcc_s.so.1. 
+Unloaded module: /lib64/libpthread.so.0. 
+Unloaded module: /lib64/libc.so.6. 
+Unloaded module: /lib64/libdl.so.2. 
+Unloaded module: /lib64/libz.so.1. 
+Unloaded module: /software/intel-inspector-2011u5-x86_64/inspector_xe_2011/bin64/../lib64/runtime/libittnotify.so. 
+Process /home/irtefa1/cs225/lab06/lab06 (PID = 28857) has terminated. 
+Application exit code: [0] 
+Result file: [/home/irtefa1/cs225/lab06/aba/r000ti2/r000ti2.inspxe] 
+Threading error analysis: completed
+=== End: [2012/03/30 16:02:26] === 

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<snippets>
+  <file name="/home/irtefa1/cs225/lab06/main.cpp" md5="">
+    <snippet line="269">
+      <line line="266"> */</line>
+      <line line="267">int main(int argc, char* argv[])</line>
+      <line line="268">{</line>
+      <line line="269">    omp_set_num_threads(8);</line>
+      <line line="270">    vector&lt;string&gt; args(argv + 1, argv + argc);</line>
+    </snippet>
+  </file>
+</snippets>

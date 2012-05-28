@@ -1,0 +1,225 @@
+// **************************************************************
+// *		   
+// *  quadtree.cpp
+// *		   
+// *  Quadtree class
+// *		   
+// *  CS 225 Spring 2008
+// *		   
+// **************************************************************
+
+#include "quadtree.h"
+
+// The first constructor where we set root to NULL
+Quadtree::Quadtree()
+{
+	root = NULL;
+}
+
+// The second constructor that has two params, PNG object source and an int d
+
+Quadtree::Quadtree(PNG & src, int d)
+{
+ 	// we will call the helper here
+ 	size_x = 0;
+	size_y = 0;
+ 	QuadtreeBuilder(src,d,0,0,root);
+}
+
+
+// Copy constructor
+
+
+Quadtree::Quadtree(const Quadtree & src)
+{
+	// Invoke the _copy helper which takes care of everything else
+	_copy(src.root, root);
+}
+
+// Destructor
+
+Quadtree::~Quadtree()
+{
+	_clear(root);
+}
+
+// Operator=
+
+Quadtree const & Quadtree::operator=(const Quadtree & rhs) 
+{
+	if(this!= &rhs)
+	{
+		// Clears everything it has
+		_clear(root);
+		// Copy everything from rhs
+		_copy(rhs.root,root);
+	}
+	// Return by reference
+	return *this;
+}
+
+// Get Pixel
+
+RGBAPixel Quadtree::getPixel(int x, int y)
+{
+	bool found = false;
+	return getPixel(x,y,root,found);
+}
+
+RGBAPixel Quadtree::getPixel(int x, int y,QuadtreeNode * & node,bool & found)
+{
+	if(node==NULL) return RGBAPixel();
+	if(x==node->i && y==node->j)
+	{
+		found = true;
+		return node->element;
+	}
+	RGBAPixel obj;
+	obj = getPixel(x,y,node->nwChild,found);
+	if(!found)
+		obj = getPixel(x,y,node->neChild,found);
+	if(!found)
+		obj = getPixel(x,y,node->swChild,found);
+	if(!found)
+		obj = getPixel(x,y,node->seChild,found);
+	return obj;
+}
+// Decompress
+
+PNG Quadtree::decompress()
+{
+	PNG obj(size_x,size_y);
+	if(root==NULL)
+		return obj;
+	decompress(root,obj);
+	return obj;	
+		
+}
+
+void Quadtree::decompress(QuadtreeNode * node, PNG & obj)
+{
+	if(node==NULL) return;
+	*(obj(node->i,node->j)) = node->element;
+	decompress(node->nwChild,obj);
+	decompress(node->neChild,obj);
+	decompress(node->swChild,obj);
+	decompress(node->seChild,obj);
+}
+// The tree builder helper
+
+void Quadtree::QuadtreeBuilder(PNG & src, int d, int x, int y, QuadtreeNode * node)
+{
+	// base case i.e. when d == 1
+	if(d==1)
+	{
+		node->i = x;
+		node->j = y;
+		node->element.red   = src(x,y)->red;
+		node->element.green = src(x,y)->green;
+		node->element.blue  = src(x,y)->blue;
+		if(x > size_x)
+			size_x = x;
+		if(y > size_y)
+			size_y = y;
+		return;
+	}
+	// assign the indices
+	
+	node->i = x;
+	node->j = y;
+	if(x > size_x) size_x = x;
+	if(y > size_y) size_y = y;
+	// call quadtreebuilder on all four children
+	int offset = d/2;
+	
+	node->nwChild = new QuadtreeNode();
+	node->neChild = new QuadtreeNode();
+	node->swChild = new QuadtreeNode();
+	node->seChild = new QuadtreeNode();
+	QuadtreeBuilder(src,offset,x,y,node->nwChild);
+	QuadtreeBuilder(src,offset,x+offset,y,node->neChild);
+	QuadtreeBuilder(src,offset,x,y+offset,node->swChild);
+	QuadtreeBuilder(src,offset,x+offset,y+offset,node->seChild);
+	
+	// take the average of all four children
+	// _red finds the red average and likewise
+	int newRed   = _red(node->nwChild,node->neChild,node->swChild,node->seChild);	
+	int newGreen = _green(node->nwChild,node->neChild,node->swChild,node->seChild);	
+	int newBlue  = _blue(node->nwChild,node->neChild,node->swChild,node->seChild);	
+
+	// color the element of 'this' with the average
+	node->element.red   = newRed;
+	node->element.green = newGreen;
+	node->element.blue  = newBlue;
+}
+
+// QuadtreeNode constructor (default)
+
+Quadtree::QuadtreeNode::QuadtreeNode()
+{
+	nwChild = NULL;
+	neChild = NULL;
+	swChild = NULL;
+	seChild = NULL;
+}
+
+// QuadtreeNode constructor
+
+Quadtree::QuadtreeNode::QuadtreeNode(RGBAPixel  pixelobj)
+{
+	nwChild = NULL;
+	neChild = NULL;
+	swChild = NULL;
+	seChild = NULL;
+
+	element.red   = pixelobj.red;
+	element.green = pixelobj.green;
+	element.blue  = pixelobj.blue;
+}
+
+// Quadtree copy constructor helper function
+
+void Quadtree::_copy(QuadtreeNode * other, QuadtreeNode * node)
+{
+	if(node==NULL) return;
+	
+	node = new QuadtreeNode(other->element);
+
+	_copy(other->nwChild,node->nwChild);
+	_copy(other->neChild,node->neChild);
+	_copy(other->swChild,node->swChild);
+	_copy(other->seChild,node->seChild);
+
+	
+}
+
+// Helper for the destructor
+
+void Quadtree::_clear(QuadtreeNode * node)
+{
+	if(node==NULL) return;
+	
+	// Post order traversal
+
+	_clear(node->nwChild);
+	_clear(node->neChild);
+	_clear(node->swChild);
+	_clear(node->seChild);
+
+	delete node;
+}
+
+// Helper functions for QuadtreeBuilder. They find the average of the children
+
+int Quadtree::_red(QuadtreeNode * a, QuadtreeNode * b, QuadtreeNode * c, QuadtreeNode * d)
+{
+	return ((a->element.red + b->element.red + c->element.red + d->element.red)/4);	
+}
+int Quadtree::_green(QuadtreeNode * a, QuadtreeNode * b, QuadtreeNode * c, QuadtreeNode * d)
+{
+	return ((a->element.green + b->element.green + c->element.green + d->element.green)/4);	
+}
+int Quadtree::_blue(QuadtreeNode * a, QuadtreeNode * b, QuadtreeNode * c, QuadtreeNode * d)
+{
+	return ((a->element.blue + b->element.blue + c->element.red + d->element.blue)/4);	
+}

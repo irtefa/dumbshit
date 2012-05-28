@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+ <version type="u32_t">1</version>
+ <All_Configurations-All_Platforms>
+  <version type="u32_t">1</version>
+  <searchDirs>
+   <searchCategory>
+    <category type="u8_t">1</category>
+   </searchCategory>
+   <searchCategory>
+    <category type="u8_t">2</category>
+   </searchCategory>
+   <searchCategory>
+    <category type="u8_t">3</category>
+   </searchCategory>
+   <searchCategory>
+    <category type="u8_t">4</category>
+   </searchCategory>
+  </searchDirs>
+  <target_settings>
+   <result_pattern type="string">r@@@{at}</result_pattern>
+   <selected_workload type="string">workload.application</selected_workload>
+   <store_in_proj_dir type="bool">true</store_in_proj_dir>
+   <result_dir type="string">/home/irtefa1/cs225/lab06/aba</result_dir>
+   <workloads>
+    <workload>
+     <application type="pointer" type_id="dasID_cctrl2::ApplicationWorkload" ptr_type="dasID_cctrl2::IWorkload">
+      <workload>
+       <launch_app.app_to_launch type="string">/home/irtefa1/cs225/lab06/lab06</launch_app.app_to_launch>
+       <launch_app.working_folder type="string">/home/irtefa1/cs225/lab06</launch_app.working_folder>
+       <launch_app.app_parameters type="string">shift</launch_app.app_parameters>
+       <result_directory.path type="string">/home/irtefa1/cs225/lab06/aba/r@@@{at}</result_directory.path>
+       <context>
+        <contextValue>
+         <id type="string">analysis_mode</id>
+         <value type="string">default</value>
+        </contextValue>
+        <contextValue>
+         <id type="string">modules_switch</id>
+         <value type="string">knob.modules_switch.include</value>
+        </contextValue>
+        <contextValue>
+         <id type="string">mrte_mode</id>
+         <value type="string">native</value>
+        </contextValue>
+        <contextValue>
+         <id type="string">process_for_analysis</id>
+         <value type="string"></value>
+        </contextValue>
+        <contextValue>
+         <id type="string">suppressions</id>
+         <value type="string">delete</value>
+        </contextValue>
+        <contextValue>
+         <id type="string">vsdbg_support</id>
+         <value type="string">off</value>
+        </contextValue>
+       </context>
+       <search_directories type="bag"/>
+      </workload>
+     </application>
+    </workload>
+   </workloads>
+  </target_settings>
+  <analysis_type_settings>
+   <selected_analysis_type_path type="string">/software/intel-inspector-2011u5-x86_64/inspector_xe_2011/config/analysis_type/ti2.cfg</selected_analysis_type_path>
+  </analysis_type_settings>
+ </All_Configurations-All_Platforms>
+</root>

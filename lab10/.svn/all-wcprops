@@ -1,0 +1,161 @@
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/sp12-cs225/!svn/ver/25765/irtefa1/lab10
+END
+hashtable.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/sp12-cs225/!svn/ver/25765/irtefa1/lab10/hashtable.h
+END
+anagram_finder.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/sp12-cs225/!svn/ver/25765/irtefa1/lab10/anagram_finder.h
+END
+letter_hash.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/sp12-cs225/!svn/ver/25765/irtefa1/lab10/letter_hash.cpp
+END
+logfile_parser.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/sp12-cs225/!svn/ver/25765/irtefa1/lab10/logfile_parser.h
+END
+anagramtest.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/sp12-cs225/!svn/ver/25765/irtefa1/lab10/anagramtest.cpp
+END
+letter_hash.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/sp12-cs225/!svn/ver/25765/irtefa1/lab10/letter_hash.h
+END
+string_hash.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/sp12-cs225/!svn/ver/25765/irtefa1/lab10/string_hash.cpp
+END
+word_counter.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/sp12-cs225/!svn/ver/26571/irtefa1/lab10/word_counter.cpp
+END
+char_counter.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/sp12-cs225/!svn/ver/25765/irtefa1/lab10/char_counter.cpp
+END
+string_hash.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/sp12-cs225/!svn/ver/25765/irtefa1/lab10/string_hash.h
+END
+word_counter.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/sp12-cs225/!svn/ver/25765/irtefa1/lab10/word_counter.h
+END
+schashtable.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/sp12-cs225/!svn/ver/26571/irtefa1/lab10/schashtable.cpp
+END
+char_counter.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/sp12-cs225/!svn/ver/25765/irtefa1/lab10/char_counter.h
+END
+wordcount.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/sp12-cs225/!svn/ver/25765/irtefa1/lab10/wordcount.cpp
+END
+textfile.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/sp12-cs225/!svn/ver/25765/irtefa1/lab10/textfile.cpp
+END
+charcount.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/sp12-cs225/!svn/ver/25765/irtefa1/lab10/charcount.cpp
+END
+schashtable.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/sp12-cs225/!svn/ver/25765/irtefa1/lab10/schashtable.h
+END
+lphashtable.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/sp12-cs225/!svn/ver/26935/irtefa1/lab10/lphashtable.cpp
+END
+logfile_generator.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/sp12-cs225/!svn/ver/25765/irtefa1/lab10/logfile_generator.cpp
+END
+hash.h
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/sp12-cs225/!svn/ver/25765/irtefa1/lab10/hash.h
+END
+textfile.h
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/sp12-cs225/!svn/ver/25765/irtefa1/lab10/textfile.h
+END
+lfparse.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/sp12-cs225/!svn/ver/25765/irtefa1/lab10/lfparse.cpp
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/sp12-cs225/!svn/ver/25765/irtefa1/lab10/Makefile
+END
+lphashtable.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/sp12-cs225/!svn/ver/25765/irtefa1/lab10/lphashtable.h
+END
+logfile_parser.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/sp12-cs225/!svn/ver/26935/irtefa1/lab10/logfile_parser.cpp
+END
+anagram_finder.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/sp12-cs225/!svn/ver/26571/irtefa1/lab10/anagram_finder.cpp
+END

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<snippets>
+  <file name="/home/irtefa1/cs225/lab06/shifter.cpp" md5="">
+    <snippet line="54">
+      <line line="51">    {</line>
+      <line line="52">        </line>
+      <line line="53">        #pragma omp parallel for</line>
+      <line line="54">        for(int x = 0; x &lt; width - 32; ++x)</line>
+      <line line="55">        {</line>
+    </snippet>
+    <snippet line="59">
+      <line line="56">            for(int y = 0; y &lt; height; ++y)</line>
+      <line line="57">            {</line>
+      <line line="58">                *image(x, y) = *image(x + 32, y);</line>
+      <line line="59">            }</line>
+      <line line="60">        }</line>
+    </snippet>
+  </file>
+</snippets>
